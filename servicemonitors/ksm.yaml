@@ -17,6 +17,7 @@ spec:
     - action: replace
       targetLabel: job
       replacement: integrations/kubernetes/kube-state-metrics
+    # fix by Grafana Cloud support: required for Integration in UI to be enabled
     relabelings:
     - action: replace
       targetLabel: job

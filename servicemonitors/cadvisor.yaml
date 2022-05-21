@@ -25,6 +25,7 @@ spec:
     - sourceLabels:
       - __metrics_path__
       targetLabel: metrics_path
+    # fix by Grafana Cloud support: required for Integration in UI to be enabled
     - action: replace
       targetLabel: job
       replacement: integrations/kubernetes/cadvisor
